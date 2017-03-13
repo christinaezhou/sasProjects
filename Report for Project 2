@@ -1,0 +1,18 @@
+Report for Project 2
+Chrisina Zhou 
+Objectives:
+The following data set includes information gathered from box scoes from NFL games from 2002. The objective of the program is to conduct a number of tests to determine if the mean number of total points scores on non-Sunday games is different from the Sunday games. Along with conducting a test to determine if the average points scored by the away team in the first quarter is less than that of the home team. For each setting of the surface, grass, astroturf, fieldturf, and astroplay  we also conduct a test to determine if the average duration of the game differs from three hours. 
+Methods:  
+    When analyzing the data to determine if the mean number of total points scored on non-Sunday games is different from those of the Sunday games, we being by creating a new data set which has a new day variable consisting of days that are Sunday and day that are not Sunday. We use a T Test at the alpha = 0.1 to output a 90% confidence interval for the difference in means. For these tests to be valid, we have to assume that the score totals follow a relativley normal distribution which we see using a QQ plot. 
+    When we analyze whether the average points scored by the away team in the first quarter is less than that of the home team, we use a paired t test at the alpha = 0.05 level for the 95% confidence interval. For these tests to be valid, we have to assume that the data follows a relativley normal distribution which we see using a QQ plot.     
+    For each setting of the surface (grass, astroturf, field turf, astroplay) we conduct a one sample t test to deterine if the average duration of the game differs from three hours. 
+Results: 
+    After conducting a test to determine if the mean number of total points scored on non-Sunday games is different than that from Sunday games, we see that there is a -5.7298 difference between the means. Our p value(0.1184) is greater than our alpha at 0.1. We fail to reject the null hypothesis here. The 90% confidence level for the difference in means is (-10.4930 , -0.9666) thus we are 90% confident that the mean number of total points scored on non-Sunday games is different from the Sunday games. 
+    After conducting a paird t test at the alpha = 0.05 level to determine if the average points scored by the away team in the first quart is less than that of the home team, we note that our p-value(0.2592) is greater than the alpha value. We fail to reject the null hypothesis that the away team scores less points than the home team in the first quarter. Our 95% confidence interval (-1.0906, 0.5513) thus we are 95% confident the interval covers the true mean difference. 
+    After condcting a one sample t test to determine if the average duration of the game differes from three hours based on the surface which the game is being played on, we can conclude that all of the surfaces except astroplay resulted in game differences from three hours. There was not sufficent data for astroplay to draw a conslusion. The p-value was barely larger than the significance level, we fail to reject the null hypothesis.  
+
+Summary: 
+    there is significant evidence that there is a difference beween the average number of points scored by teams playing on Sunday and teams not playing on Sunday. 
+    there is significant evidence that the average points scored by the away team in the first quarter is less than that of the home team. 
+    There is significant evidence that for all surfaces other than astroplay, the average duration of the game differes from 3 hours.      
+    
